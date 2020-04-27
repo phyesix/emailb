@@ -1,0 +1,63 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.builder {
+  display: flex;
+  justify-content: center;
+}
+.partial-wrapper {
+  position: relative;
+}
+.partial-wrapper:hover .btn-remove-partial {
+  display: block;
+}
+.btn-remove-partial {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -16px;
+  font-size: 16px;
+  width: 1em;
+  height: 1em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cellipse cx='256' cy='256' rx='256' ry='255.832' fill='%23e04f5f'/%3E%3Cg fill='%23fff'%3E%3Cpath d='M376.812 337.18l-39.592 39.593-201.998-201.999 39.592-39.592z'/%3E%3Cpath d='M376.818 174.825L174.819 376.824l-39.592-39.592 201.999-201.999z'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: transparent;
+  border: none;
+}
+
+.btn__save {
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"] {
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  background-color: #ffffff;
+  box-shadow: none;
+
+  padding: 8px;
+  font-size: 12px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contentEditor {
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 200px;
+}
